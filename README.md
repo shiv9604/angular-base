@@ -174,7 +174,7 @@ It can be created like `app/styles/buttons.scss` etc as like mentioned below.
 
 <img src="./src/assets/architecture/styles.png">
 
-### ./src/assets Organisation
+### Assets Organisation
 
 Angular CLI creates us an directory named as ./src/assets which should be used to keep all the ./src/assets grouped by features together like `./src/assets/user/default-user.png` as like mentioned below.
 
