@@ -3,11 +3,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { CommonModule } from '@angular/common';
 import { CommonImportsModule } from 'src/app/common-imports.module';
+import { AuthRoutingModule } from './auth.routing.module';
+import { MaterialModule } from 'src/app/material.module';
 
 @NgModule({
-  imports: [CommonModule, CommonImportsModule],
+  imports: [CommonModule, CommonImportsModule, AuthRoutingModule],
   declarations: [LoginComponent, SignUpComponent],
   providers: [],
-  exports: [],
+  exports: []
 })
 export class AuthModule {}

@@ -8,29 +8,29 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Observable } from 'rxjs';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class RouteGuard implements CanActivate, CanActivateChild {
-  constructor(private router: Router) {}
-  loggedIn = true;
+export class AuthGuard implements CanActivate, CanActivateChild {
+  constructor(private router: Router,private authService:AuthService) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
-    if (this.loggedIn) {
+    if (this.authService.userAuth) {
       return true;
     } else {
-      this.router.navigate(['/404']);
+      this.router.navigate(['/login']);
     }
   }
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot,
+    state: RouterStateSnapshot
   ): any {
-    if (this.loggedIn) {
+    if (this.authService.userAuth) {
       return true;
     } else {
-      this.router.navigate(['/404']);
+      this.router.navigate(['/login']);
     }
   }
 }

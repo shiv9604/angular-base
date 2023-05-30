@@ -1,9 +1,10 @@
-<div class="main container-fluid row" *ngIf="loadForm">
+<div class="main container-fluid row" *ngIf="loginForm">
   <div class="baner col-6">
     <div class="overlay"></div>
   </div>
   <div class="form col-6">
     <div class="headings">
+      
       <p class="text-center heading">Welcome</p>
       <br />
       <p class="text-center subheading">Log in to your account to continue</p>
@@ -18,7 +19,7 @@
             formControlName="user"
             id="email"
           />
-          <img src="../../../assets/user.png" alt="" class="user" />
+          <img src="../../../assets/login/user.png" alt="" class="user" />
           <span class="emailerr" *ngIf="loginForm.invalid && loginForm.touched"
             >Email is required</span
           >
@@ -31,7 +32,7 @@
             placeholder="**********"
             id="pass"
           />
-          <img src="../../../assets/lock.png" alt="" class="lock" />
+          <img src="../../../assets/login/lock.png" alt="" class="lock" />
 
           <span class="passerr" *ngIf="loginForm.invalid && loginForm.touched"
             >Password is required</span
@@ -50,9 +51,9 @@
         <div class="social container-fluid mt-5">
           <p>Dont have an account? <u>Sign up!</u></p>
           <div class="accounts mt-4 mx-auto">
-            <img src="../../../assets/facebook.png" alt="" />
-            <img src="../../../assets/twitter.png" alt="" />
-            <img src="../../../assets/linkedin.png" alt="" />
+            <img src="../../../assets/login/facebook.png" alt="" />
+            <img src="../../../assets/login/twitter.png" alt="" />
+            <img src="../../../assets/login/linkedin.png" alt="" />
           </div>
         </div>
       </form>

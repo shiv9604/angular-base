@@ -1,18 +1,28 @@
 import { Component } from '@angular/core';
-import { FormControl, UntypedFormGroup, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  UntypedFormGroup,
+  Validators
+} from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { SnackbarService } from 'src/app/core/services/snackbar/snackbar.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  loginForm: UntypedFormGroup;
-  loadForm: boolean = false;
+  loginForm: FormGroup;
 
-  constructor(public snackbarService: SnackbarService) {}
+  constructor(
+    public snackbarService: SnackbarService,
+    private authService: AuthService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.formInit();
@@ -21,19 +31,16 @@ export class LoginComponent {
   formInit() {
     this.loginForm = new UntypedFormGroup({
       user: new FormControl('', [Validators.required]),
-      pass: new FormControl('', [Validators.required]),
+      pass: new FormControl('', [Validators.required])
     });
-    this.loadForm = true;
-    console.log(this.loginForm.get('user').status);
     console.log('Valid Status =>', this.loginForm.valid);
   }
 
   onSubmit() {
-    for (let key in this.loginForm.value) {
-      this.loginForm.value[key] = this.loginForm.value[key].slice(11);
-    }
     console.log('form Values =>', this.loginForm.value);
-    this.snackbarService.open('Your Response Submitted Sucessfully');
+    this.snackbarService.open('Logged In Sucessfully...');
+    this.authService.userAuth = true;
+    this.router.navigate(['/home']);
     this.loginForm.reset();
   }
 }
