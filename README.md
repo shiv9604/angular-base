@@ -4,13 +4,13 @@ Angular Architecture is building block of the project to ensure the application'
 
 With the help of best practices with architecture we can achieve easy debugging, error handelling, and performance etc.
 
-<img src="./architecture.png">
+<img src="assets/architecture/architecture.png">
 
 ### Building Blocks
 
 Angular Application have some fundamental building blocks of the application like Modules, Services, Components,Pipes and SCSS as like mentioned below.
 
-<img src="./buiding-blocks.png">
+<img src="assets/architecture/buiding-blocks.png">
 
 **Importances :-**
 
@@ -115,7 +115,7 @@ Angular file structure mostly get divided into mostly 3-4 groups of modules as m
 
     This module consists of all pages regarding the authentication like login, signup, forgot password, email confirmation etc which should be seprated and easily accessible in the application as like mentioned below.
 
-    <img src="./feature-modules.png">
+    <img src="assets/architecture/feature-modules.png">
 
     This is root level module which should be initially loaded when the angular application is started.
 
@@ -126,7 +126,7 @@ Angular file structure mostly get divided into mostly 3-4 groups of modules as m
 
     **Common services should be in Core Modules :-**
 
-    <img src="./core-services.png">
+    <img src="assets/architecture/core-services.png">
 
     - **HTTP Service :-**
 
@@ -144,12 +144,12 @@ Angular file structure mostly get divided into mostly 3-4 groups of modules as m
 
         We all need to use the browser storage services like `LocalStorage` and `SessionStorage` for saving the JWT tokens and etc. To store, retrive, delete, modify local and sessino storage items this service should be implemented.    
     
-    <img src="./core.png">
+    <img src="assets/architecture/core.png">
 - **Shared Module :-**
 
     Shared module is the module which consists of all pipes, directives,components which are not module specific should be kept in shared module as like mentioned below.
 
-    <img src="./feature-modules.png">
+    <img src="assets/architecture/feature-modules.png">
 
     We create our pipes, directives and frequently used in the application.
 
@@ -161,7 +161,7 @@ Angular file structure mostly get divided into mostly 3-4 groups of modules as m
 
     In the single feature there could be multiple pages like `user` feature can consists all the pages related to user like profile etc as like mentioned below.
 
-    <img src="./feature-modules.png">
+    <img src="assets/architecture/feature-modules.png">
 
 
     
@@ -172,12 +172,12 @@ In the app directory we create our `styles/` directory in which we group our all
 
 It can be created like `app/styles/buttons.scss` etc as like mentioned below.
 
-<img src="./styles.png">
+<img src="assets/architecture/styles.png">
 
 ### Assets Organisation
 
 Angular CLI creates us an directory named as Assets which should be used to keep all the assets grouped by features together like `assets/user/default-user.png` as like mentioned below.
 
-<img src="./assets.png">
+<img src="assets/architecture/assets.png">
 
 As you can see above we have grouped the icons by its category and by the feature modules.
