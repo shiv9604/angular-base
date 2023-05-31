@@ -8,10 +8,6 @@ import { MaterialModule } from './material.module';
   declarations: [],
   imports: [
     CommonModule,
-    FormsModule,
-    HttpClientModule,
-    MaterialModule,
-    ReactiveFormsModule,
   ],
   exports: [FormsModule, HttpClientModule, MaterialModule, ReactiveFormsModule],
   providers: [],

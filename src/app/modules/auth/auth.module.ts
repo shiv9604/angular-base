@@ -7,7 +7,11 @@ import { AuthRoutingModule } from './auth.routing.module';
 import { MaterialModule } from 'src/app/material.module';
 
 @NgModule({
-  imports: [CommonModule, CommonImportsModule, AuthRoutingModule],
+  imports: [
+    CommonModule,
+    AuthRoutingModule,
+    CommonImportsModule
+  ],
   declarations: [LoginComponent, SignUpComponent],
   providers: [],
   exports: []

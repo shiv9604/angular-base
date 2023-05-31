@@ -43,7 +43,6 @@
 
 form {
   width: 50%;
-  margin: 8% auto;
   text-align: center;
 }
 
@@ -101,8 +100,6 @@ input::placeholder {
   color: rgb(204, 204, 204);
 }
 .accounts {
-  display: flex;
-  justify-content: space-around;
   width: 50%;
 }
 .accounts img {
@@ -120,4 +117,9 @@ input::placeholder {
   margin: 0% 0 0 -53%;
   font-size: 12px;
   color: red;
+}
+
+.item{
+  border: 1px solid red;
+  background-color: gainsboro;
 }

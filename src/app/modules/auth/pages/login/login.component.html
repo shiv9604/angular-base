@@ -1,16 +1,16 @@
 <div class="main container-fluid row" *ngIf="loginForm">
-  <div class="baner col-6">
+  <div class="baner col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <div class="overlay"></div>
   </div>
-  <div class="form col-6">
+  <div class="form col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <div class="headings">
       
       <p class="text-center heading">Welcome</p>
       <br />
       <p class="text-center subheading">Log in to your account to continue</p>
     </div>
-    <div class="form">
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form ml-auto my-5">
+      <form class="mx-auto" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="field mb-4">
           <input
             type="text"
@@ -50,7 +50,7 @@
 
         <div class="social container-fluid mt-5">
           <p>Dont have an account? <u>Sign up!</u></p>
-          <div class="accounts mt-4 mx-auto">
+          <div class="accounts mt-4 mx-auto d-flex justify-content-around align-items-center">
             <img src="../../../assets/login/facebook.png" alt="" />
             <img src="../../../assets/login/twitter.png" alt="" />
             <img src="../../../assets/login/linkedin.png" alt="" />

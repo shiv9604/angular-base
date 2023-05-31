@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ModuleWithProviders } from '@angular/core';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -23,10 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import {
-  MatProgressSpinner,
-  MatProgressSpinnerModule,
-} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
@@ -37,12 +32,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-// import{MatAutocompleteModule} from "@angular/material"
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDividerModule } from '@angular/material/divider';
 
-const MaterialComponents = [
+const MatModules = [
   MatAutocompleteModule,
   MatToolbarModule,
   MatButtonModule,
@@ -72,15 +66,15 @@ const MaterialComponents = [
   MatStepperModule,
   MatTableModule,
   MatTabsModule,
-  // Toast,
   MatNativeDateModule,
   MatBottomSheetModule,
   MatDividerModule,
   MatBadgeModule,
+  MatRippleModule
 ];
 @NgModule({
   declarations: [],
   imports: [CommonModule],
-  exports: [],
+  exports: [MatModules]
 })
 export class MaterialModule {}
