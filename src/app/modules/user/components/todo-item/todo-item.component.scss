@@ -1,0 +1,40 @@
+@import '../../../../../styles/colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  color: $white;
+  font-size: 13px;
+  font-weight: 400;
+
+  .todo {
+    input[type='checkbox'] {
+      width: 15px;
+      height: 15px;
+      opacity: 0.3;
+
+      &:checked {
+        accent-color: #484f58;
+        opacity: 1;
+      }
+    }
+  }
+  .actions {
+    button {
+      min-width: 60px;
+      padding: 3px 6px;
+      background-color: #484f58;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+
+      &:hover {
+        background-color: #58606b;
+      }
+    }
+  }
+}

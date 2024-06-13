@@ -1,0 +1,48 @@
+<div class="main container-fluid position-relative overflow-hidden">
+    <div class="todos-container position-absolute top-0 bottom-0 start-0 end-0 m-auto">
+        <div class="header text-center py-2 text-light border-bottom border-dark">
+            <h1 class="title m-0">TODO</h1>
+        </div>
+
+        <div class="body p-5">
+            <div class="date-time">
+                <h1 class="m-0 day text-light text-center">{{today.day}}</h1>
+                <div class="date-year text-center text-secondary mt-1">
+                    {{today?.date}}
+                </div>
+            </div>
+
+            <div class="todos w-75 mx-auto">
+                <div class="add mt-5">
+                    <form class="position-relative">
+                        <div class="form-group">
+                            <mat-icon
+                                class="text-secondary position-absolute top-0 bottom-0 start-0 end-0 my-auto ms-2">
+                                sort</mat-icon>
+                            <input type="text" class="form-control p-2 text-light border border-dark"
+                                placeholder="Add a task..." #input [value]="isEdit?.todo" />
+                            <mat-icon class="text-secondary add" matRipple *ngIf="!isEdit"
+                                (click)="add(input?.value);input.value=''">
+                                add_circle</mat-icon>
+                            <mat-icon class="text-secondary edit" matRipple *ngIf="isEdit" (click)="edit(input.value)">
+                                check_circle</mat-icon>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="list mt-3">
+                    <ng-container *ngFor="let todo of todos">
+                        <app-todo-item [todo]="todo" (edit)="onEdit($event)" (delete)="onDelete($event)"
+                            (complete)="onComplete($event)">
+                        </app-todo-item>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-shapes position-relative">
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+</div>

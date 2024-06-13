@@ -1,4 +1,5 @@
-import { loaderReducer } from '../shared/loader/Store/loader.reducers';
+import { loaderReducer } from "../shared/components/loader/Store/loader.reducers";
+
 
 export const appReducer = {
   loader: loaderReducer,

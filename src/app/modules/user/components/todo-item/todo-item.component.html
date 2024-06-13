@@ -1,0 +1,10 @@
+<div class="item d-flex justify-content-between align-items-center mb-2">
+    <div class="todo d-flex align-items-center gap-2">
+        <input type="checkbox" class="check" [checked]="todo?.completed" #checkbox (change)="onComplete(checkbox.checked)">
+        <span>{{todo?.todo}}</span>
+    </div>
+    <div class="actions d-flex gap-2">
+        <button matRipple (click)="edit.emit(todo)">Edit</button>
+        <button matRipple (click)="delete.emit(todo)">Delete</button>
+    </div>
+</div>

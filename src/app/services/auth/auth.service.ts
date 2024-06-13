@@ -11,7 +11,7 @@ export class AuthService {
     private router: Router
   ) {}
 
-  userAuth: boolean = false;
+  userAuth: boolean = true;
 
   public login(): void {
     // After login Sucess Call the setToken method with token

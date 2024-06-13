@@ -12,8 +12,12 @@ import { HeaderComponent } from './home/header/header.component';
 import { AuthInterceptor } from './core/interceptor/auth.interceptor';
 import { AuthModule } from './modules/auth/auth.module';
 import { MaterialModule } from './material.module';
-
-
+import { StoreModule } from '@ngrx/store';
+import { appState } from './Store/app.state';
+import { appReducer } from './Store/app.reducer';
+import { loaderReducer } from './shared/components/loader/Store/loader.reducers';
+import { SharedModule } from './shared/shared.module';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     CommonImportsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    StoreModule.forRoot({ loader: loaderReducer }),
+    SharedModule
   ],
   providers: [
     {

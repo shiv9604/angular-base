@@ -1,7 +1,7 @@
-import { loaderState } from '../shared/loader/Store/loader.state';
+import { loaderState } from "../shared/components/loader/Store/loader.state";
 
 export const appState = {
-  loader: loaderState,
+  loader: loaderState
 };
 
 export interface AppState {

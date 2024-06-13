@@ -1,11 +1,13 @@
-*{
+@import '../../../styles/colors.scss';
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main{
-  background-color: rgba(0, 0, 0, 0.89);
+.main {
+  background-color: #4a154b;
   padding: 16px;
   height: 50px;
   display: flex;
@@ -14,23 +16,14 @@
   color: white;
 }
 
-mat-icon{
+mat-icon {
   font-size: 26px !important;
   cursor: pointer;
 }
 
 .navigations {
+  cursor: pointer;
   height: inherit;
   display: flex;
   align-items: center;
-}
-
-.navigations li {
-  list-style: none;
-}
-
-.navigations li a {
-  text-decoration: none;
-  color: white;
-  margin: 25px 25px 0px 25px;
 }

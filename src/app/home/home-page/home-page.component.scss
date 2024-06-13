@@ -1,29 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main{
-    width: 100%;
-    min-height: 94.2vh;
-    padding: 16px 0 0 16px;
-}
-
-mat-sidenav-container{
-    height: 100%;
+.main {
+  width: 100%;
+  min-height: 94.6vh;
+  //   padding: 16px 0 0 16px;
 }
 
-mat-sidenav{
-    padding: 16px;
-    width: 15%;
+mat-sidenav-container {
+  height: 100%;
 }
 
-mat-sidenav{
-    background-color:rgba(0, 0, 0, 0.89);
-    color: white;
+mat-sidenav {
+  width: 15%;
 }
 
-mat-sidenav-content{
-    background-color: white !important;
+mat-sidenav-content {
+  background-color: white !important;
 }

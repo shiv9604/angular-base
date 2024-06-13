@@ -1,0 +1,51 @@
+@import '../../../styles/colors.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: $primary;
+  color: $white;
+  cursor: default;
+  .header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      font-size: 28px;
+
+      b {
+        font-weight: 500;
+      }
+    }
+
+    .tagline {
+      color: $secondary;
+    }
+  }
+  .navigations {
+    .nav-item {
+      border: 1px white;
+      height: 58px;
+      padding-left: 25px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
+
+    .nav-item:hover:not(.nav-item-active) {
+      transition: 0.3s;
+      background-color: $secondary-light;
+    }
+    .nav-item-active {
+      background-color: $secondary;
+    }
+  }
+}

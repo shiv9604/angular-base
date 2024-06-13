@@ -12,8 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'auth',
-    loadChildren:()=>import('./modules/auth/auth.module').then(m=>m.AuthModule)
+    path: 'auth',
+    loadChildren: () =>
+      import('./modules/auth/auth.module').then((m) => m.AuthModule)
   },
   {
     path: 'home',
@@ -23,21 +24,20 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'user',
+        redirectTo: 'practice',
         pathMatch: 'full'
       },
       {
-        path: 'user',
+        path: 'practice',
         loadChildren: () =>
-          import('./modules/user/user.module').then((m) => m.UserModule)
+          import('./modules/user/practice.module').then((m) => m.PracticeModule)
       }
     ]
   },
   {
     path: '**',
     component: HomePageComponent
-  },
-
+  }
 ];
 
 @NgModule({

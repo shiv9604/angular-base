@@ -1,1 +1,18 @@
-<p>Sidebar Works!</p>
+<div class="container-fluid main h-100">
+    <div class="header ">
+        <span class="content my-auto">
+            <h1 class="logo m-0">
+                <b>think</b>bridge
+            </h1>
+            <p class="tagline mb-0 mt-2">there's a new way there<sup>TM</sup></p>
+        </span>
+    </div>
+
+    <div class="navigations h-75">
+        <ng-container *ngFor="let item of navigations">
+            <div class="nav-item" [routerLink]="item.url" routerLinkActive="nav-item-active" *ngIf="item.access">
+                <p class="sidebar-item-text">{{item.label}}</p>
+            </div>
+        </ng-container>
+    </div>
+    </div>

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    // border: 1px solid red;
+    width: 100%;
+    height: 95vh;
+
+    ag-grid-angular{
+        width: inherit;
+        height: 60vh;
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "think-time-client",
+  "name": "angular-base",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,8 +23,12 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
-    "@ngrx/store": "^16.0.0",
+    "@ngrx/store": "^15.4.0",
+    "ag-grid-angular": "^30.0.3",
+    "ag-grid-community": "^30.0.3",
+    "ag-grid-enterprise": "^30.0.3",
     "bootstrap": "^5.2.3",
+    "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

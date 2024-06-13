@@ -2,12 +2,12 @@
     <mat-sidenav mode="side" align="start" #sidenav [(opened)]="navOpenedDefault">
         <app-sidebar></app-sidebar>
     </mat-sidenav>
-    <!-- Body -->
     <mat-sidenav-content>
         <app-header [sidenav]="sidenav"> </app-header>
 
         <div class="main">
             <router-outlet></router-outlet>
+            <app-loader></app-loader>
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

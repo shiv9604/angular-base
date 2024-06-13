@@ -1,0 +1,122 @@
+export let Utilities = [
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: '11c9f05f-4931-41f9-b4d9-1ae523997108',
+    Name: 'AEP South Western Electric Power',
+    Duns: '026763672',
+    status: '2',
+    UtilityStatus: 'InActive',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: 'd6053d22-751b-43b9-bb1a-040ffae0784c',
+    Name: 'AEP Texas Central Company',
+    Duns: '007924772',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: '631cf83c-e641-40c8-b387-ec304d7580b5',
+    Name: 'AEP Texas North Company',
+    Duns: '007923311',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: '9e506d26-0b48-44cd-a499-2a8e51df29b0',
+    Name: 'Centerpoint',
+    Duns: '957877905',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: 'd94f8ffa-2220-4eec-bcc1-79afb2c05db5',
+    Name: 'CITY OF LUBBOCK BY AND THRU LUBBOCK POWER',
+    Duns: '0582138934100',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: '0e34f54a-a823-4fb8-b10d-a0531acd7684',
+    Name: 'Nueces',
+    Duns: '0088288574800',
+    status: '2',
+    UtilityStatus: 'InActive',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: '2182eb64-62d2-49b9-a17b-5b9d80783c43',
+    Name: 'Oncor',
+    Duns: '1039940674000',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: 'd8e7c0a8-a607-47c3-b9df-2ac9ba12650d',
+    Name: 'Sharyland Utilities',
+    Duns: '1052623364500',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: 'd8098ad6-dc07-41f9-9e84-377b0d216f79',
+    Name: 'Sharyland-McAllen',
+    Duns: '105262336',
+    status: '2',
+    UtilityStatus: 'InActive',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  },
+  {
+    CompetitiveResellerKey: 'd54f8d2b-11be-4eff-b316-a3bc7057abc0',
+    Supplier: 'Alliance Power Company LLC',
+    SupplierDuns: '136249187',
+    ServiceProviderKey: 'aeb4c962-c503-4f78-8bb8-1cf8c76ccbf7',
+    Name: 'Texas New Mexico Power Company',
+    Duns: '007929441',
+    status: '1',
+    UtilityStatus: 'Active',
+    State: 'TX',
+    LegalEntityName: 'Alliance Power Company, LLC'
+  }
+];

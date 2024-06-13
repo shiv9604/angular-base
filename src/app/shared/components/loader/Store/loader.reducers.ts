@@ -8,9 +8,15 @@ const loader_Reducer = createReducer(
   on(showLoader, (state, action) => {
     return {
       ...state,
-      showLoader: action.status,
+      showLoader: true
     };
   }),
+  on(stopLoader, (state, action) => {
+    return {
+      ...state,
+      showLoader: false
+    };
+  })
 );
 
 export function loaderReducer(state: any, action: any) {

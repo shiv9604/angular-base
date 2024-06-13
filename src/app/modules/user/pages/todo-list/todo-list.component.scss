@@ -1,0 +1,93 @@
+@import '../../../../../styles/colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 94.6vh;
+
+  .todos-container {
+    width: 70%;
+    height: 70vh;
+    background-color: #3c424a;
+  }
+
+  .body {
+    .todos {
+      .add {
+        .form-group {
+          mat-icon {
+            font-size: 24px;
+          }
+
+          .form-control {
+            background-color: #343a40;
+            padding-left: 38px !important;
+            font-weight: 400;
+            color: $white;
+            font-size: 14px;
+            &:focus {
+              border-color: $white;
+              -webkit-box-shadow: 0 0 0 0.2rem rgba(178, 178, 178, 0.54);
+              -moz-box-shadow: 0 0 0 0.2rem rgba(178, 178, 178, 0.54);
+              box-shadow: 0 0 0 0.2rem rgba(178, 178, 178, 0.54);
+            }
+
+            &::placeholder {
+              color: #6a7077;
+              font-size: 14px;
+            }
+          }
+
+          .add,
+          .edit {
+            position: absolute;
+            top: 7px;
+            right: 8px;
+            bottom: 0;
+            cursor: pointer;
+
+            &:hover {
+              transition: 0.3s;
+              color: rgb(152, 152, 152) !important;
+            }
+          }
+        }
+      }
+
+      .list {
+        height: 27.1vh;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color: rgb(105, 105, 105);
+        }
+      }
+    }
+  }
+
+  .bg-shapes {
+    width: 150%;
+    z-index: -1;
+    transform: rotate(170deg) translate(0%, 35%);
+
+    .top {
+      background-color: $bg-dark;
+    }
+
+    .bottom {
+      background-color: $bg-light;
+    }
+  }
+  .bg-shapes > * {
+    height: 100vh;
+  }
+}
