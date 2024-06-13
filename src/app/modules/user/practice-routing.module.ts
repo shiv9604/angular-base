@@ -5,11 +5,12 @@ import { SignUpComponent } from '../auth/pages/sign-up/sign-up.component';
 import { AgGridComponent } from './pages/ag-grid/ag-grid.component';
 import { HackerNewsComponent } from './pages/hacker-news/hacker-news.component';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
+import { DeadlinesComponent } from './pages/deadlines/deadlines.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'todos',
+    redirectTo: 'deadlines',
     pathMatch: 'full'
   },
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'ag-grid',
     component: AgGridComponent
+  },
+  {
+    path: 'deadlines',
+    component: DeadlinesComponent
   }
 ];
 

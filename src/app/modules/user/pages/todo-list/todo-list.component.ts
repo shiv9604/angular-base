@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DateForTodoList } from 'src/app/models/Dates/date.mode';
 import { Todo } from 'src/app/models/Todos/todo.model';
 import * as moment from 'moment';
-import { TodosService } from 'src/app/services/user/todos.service';
+import { TodosService } from 'src/app/services/todos/todos.service';
 import {
   TodoDeletedResponse,
   TodosResponse

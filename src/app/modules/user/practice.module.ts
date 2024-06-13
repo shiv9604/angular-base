@@ -9,6 +9,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AgGridComponent } from './pages/ag-grid/ag-grid.component';
 import { CustomCellComponent } from './components/custom-cell/custom-cell.component';
 import { PracticeRoutingModule } from './practice-routing.module';
+import { DeadlinesComponent } from './pages/deadlines/deadlines.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PracticeRoutingModule } from './practice-routing.module';
     TodoItemComponent,
     HackerNewsComponent,
     AgGridComponent,
-    CustomCellComponent
+    CustomCellComponent,
+    DeadlinesComponent
   ],
   imports: [
     CommonModule,

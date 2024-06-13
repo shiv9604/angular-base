@@ -10,21 +10,21 @@ export class SidebarComponent {
     {
       label: 'Todos',
       url: '/home/practice/todos',
-      access: true
+      access: false
     },
     {
       label: 'Hacker News',
       url: '/home/practice/hacker-news',
-      access: true
+      access: false
     },
     {
       label: 'Ag-Grid',
       url: '/home/practice/ag-grid',
-      access: true
+      access: false
     },
     {
       label: 'Deadline',
-      url: '/home/practice/deadline',
+      url: '/home/practice/deadlines',
       access: true
     }
   ];
